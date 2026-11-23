@@ -1,0 +1,51 @@
+INPUT :
+Class Teman:
+    Def perkenalan(self):
+        Print(f”Halo, nama saya {self.nama}, cuaca hari ini {self.cuaca}.”)
+
+    Def bicara(self, nama_teman):
+        Print(f”Halo {nama_teman}, menurut saya cuaca hari ini {self.cuaca}.”)
+
+# Membuat objek teman pertama
+Teman1 = Teman()
+Teman1.nama = “Intan”
+Teman1.cuaca = “cerah”
+
+# Membuat objek teman kedua
+Teman2 = Teman()
+Teman2.nama = “Nuraeni”
+Teman2.cuaca = “mendung”
+
+Print(“=== PERKENALAN TEMAN ===”)
+Teman1.perkenalan()
+Teman2.perkenalan()
+
+Print(“\n=== PERCAKAPAN INTAN DAN NURAENI ===”)
+Teman1.bicara(“Nuraeni”)
+Teman2.bicara(“Intan”)
+
+Print(“\n=== KEADAAN CUACA ===”)
+Print(f”{teman1.nama} melihat cuaca {teman1.cuaca}.”)
+Print(f”{teman2.nama} melihat cuaca {teman2.cuaca}.”)
+
+OUTPUT : 
+=== PERKENALAN TEMAN ===
+Halo, nama saya Intan, cuaca hari ini cerah.
+Halo, nama saya Nuraeni, cuaca hari ini mendung.
+
+=== PERCAKAPAN INTAN DAN NURAENI ===
+Halo Nuraeni, menurut saya cuaca hari ini cerah.
+Halo Intan, menurut saya cuaca hari ini mendung.
+
+=== KEADAAN CUACA ===
+Intan melihat cuaca cerah.
+Nuraeni melihat cuaca mendung.
+
+
+KETERANGAN 
+Class: Teman, sebagai cetakan objek.
+Object: teman1 dan teman2.
+Attribute: nama dan cuaca.
+Method: perkenalan() dan bicara().
+Print: Menampilkan teks pada layar.
+
